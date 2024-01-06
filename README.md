@@ -13,4 +13,4 @@ This project's goal is to demonstrate and reinforce knowledge of React fundament
 - TBD
 
 ### Other Interesting Things Learned
-- TBD
+- using async functions (in this case, for an API call) in useEffect
