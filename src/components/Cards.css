@@ -1,7 +1,7 @@
 .card-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px;
-  grid-template-columns: repeat(auto-fit, 200px);
   justify-content: center;
 }
 
@@ -12,7 +12,7 @@
   align-items: center;
   padding: 15px;
   border: 2px solid rgb(141, 152, 160);
-  background-color: rgb(228, 242, 247);
+  background-color: rgb(237, 245, 248);
   border-radius: 16px;
   box-sizing: border-box;
 }

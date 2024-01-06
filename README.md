@@ -6,8 +6,12 @@ This project's goal is to demonstrate and reinforce knowledge of React fundament
 - navigate your CLI to the repo folder
 - ??? (will include as soon as I know the answer)
 
-### Project Status
-- just getting started
+### To Do: 
+- resolve double render issue (development only occasionally causes a pokemon to render twice)
+- implement card click handling
+- implement score tracking
+- classic Pokemon font could be really cool
+- in a 5-5-2, figure out how to get the last 2 cards to center
 
 ### Main Takeaways
 - TBD
