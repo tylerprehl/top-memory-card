@@ -1,0 +1,13 @@
+This is just a note file for me to use as a place to brainstorm
+
+Components Needed (from the bottom->up):
+- Cards
+- Header (includes scores)
+- Instructions
+- MemoryCardGame
+
+
+CSS Notes:
+- Grid
+- constant card size (wrap/display appropriately)
+- hover highlight
