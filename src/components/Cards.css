@@ -1,9 +1,16 @@
+.card-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .card {
   padding: 2em;
   border: 2px solid rgb(141, 152, 160);
   background-color: rgb(203, 242, 255);
   border-radius: 1em;
 }
+
 .card:hover {
   filter: drop-shadow(0 0 0.5em #00509baa);
 }

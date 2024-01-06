@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import MemoryCardGame from './components/MemoryCardGame'
+import * as ApiTesting from './components/apiTesting'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -8,3 +9,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <MemoryCardGame />
   </React.StrictMode>,
 )
+
+ApiTesting.apiTest();

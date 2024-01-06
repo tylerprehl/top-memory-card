@@ -3,7 +3,8 @@ import './Cards.css';
 function Cards() {
 
   return (
-    <div>
+    <div className="card-grid">
+      <div className="card">Card</div>
       <div className="card">Card</div>
     </div>
   )
