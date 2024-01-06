@@ -23,31 +23,27 @@ let pokemonList = [
 function Cards() {
   const [pokemonDataList, setPokemonDataList] = useState([]); // list of pokemon (w/ data) in random order
 
-  // maybe try to get it to render just 1 pokemon first, then worry about the list?
-
   // this useEffect should be dependent on one of the cards getting clicked
   useEffect(() => {
-
-    async function fetchPokemonData() {
-
-      let tempPokemonDataList = [];
-      for (let i = 0; i < pokemonList.length; i++) {
-        const pokemonData = await getPokemonInfo(pokemonList[i]);
-        tempPokemonDataList.push(pokemonData);
-      }
-      setPokemonDataList(tempPokemonDataList);
+    async function sortAndFetchPokemon() {
+      await shufflePokemon(pokemonList);
+      setPokemonDataList(await fetchPokemonData());
     }
-
-    shufflePokemon(pokemonList);
-    console.log(pokemonList);
-    fetchPokemonData();
+    sortAndFetchPokemon();
   }, []);
 
-  function shufflePokemon(pokemonArray) {
-    for (let i = pokemonArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [pokemonArray[i], pokemonArray[j]] = [pokemonArray[j], pokemonArray[i]];
+  async function shufflePokemon() {
+    pokemonList.sort(() => Math.random() - 0.5)
+    console.log(pokemonList);
+  }
+
+  async function fetchPokemonData() {
+    let tempPokemonDataList = [];
+    for (let i = 0; i < pokemonList.length; i++) {
+      const pokemonData = await getPokemonInfo(pokemonList[i]);
+      tempPokemonDataList.push(pokemonData);
     }
+    return tempPokemonDataList;
   }
 
   return (
