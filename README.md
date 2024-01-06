@@ -7,7 +7,6 @@ This project's goal is to demonstrate and reinforce knowledge of React fundament
 - ??? (will include as soon as I know the answer)
 
 ### To Do: 
-- resolve double render issue (development only occasionally causes a pokemon to render twice)
 - implement card click handling
 - implement score tracking
 - classic Pokemon font could be really cool
