@@ -12,7 +12,10 @@ This project's goal is to demonstrate and reinforce knowledge of React fundament
 - classic Pokemon font could be really cool
 
 ### Main Takeaways
-- TBD
+- Be careful with async and modifying 'global' variables inside of useEffect!
+  - I was using a global 
 
 ### Other Interesting Things Learned
-- using async functions (in this case, for an API call) in useEffect
+- Using async functions (in this case, for an API call) in useEffect
+- Be careful with async and modifying 'global' variables inside of useEffect!
+  - I was using a global <strong>pokemonList</strong> variable that I re-sorted inside the useEffect, and something about how it's modified resulted in the double-render of StrictMode rendering a 13th pokemon card (where the first card was from the first render and the next 12 were from the second)
