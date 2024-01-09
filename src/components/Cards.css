@@ -8,14 +8,14 @@
 @media (prefers-color-scheme: dark) {
   :card {
     --card-background-color: lightgray;
-    --card-hover-background-color: darkgray;
+    --card-click-color: darkgray;
     --card-text-color: black;
   }
 }
 
 .card {
   --card-background-color: whitesmoke;
-  --card-hover-color: lightgray;
+  --card-click-color: lightgray;
   --card-text-color: black;
 
   display: flex;
@@ -35,7 +35,7 @@
 }
 
 .card:active {
-  background-color: var(--card-hover-background-color);
+  background-color: var(--card-click-color);
 }
 
 img {
