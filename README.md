@@ -6,6 +6,7 @@ This project's goal is to demonstrate and reinforce knowledge of React fundament
 - navigate your CLI to the repo folder
 - run ```npm init```
 - run ```npm run dev```
+<br>
 You can also view this project at ***
 
 ### To Do: 
