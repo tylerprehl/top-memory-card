@@ -6,15 +6,31 @@ import Cards from './Cards.jsx'
 import '../App.css';
 
 function MemoryCardGame() {
-  const [currentScore, setCurrentScore] = useState(0);
+  const [chosenPokemon, setChosenPokemon] = useState(new Set());
+  const [highScore, setHighScore] = useState(0);
+
+
+  function handleCardChoice(e) {
+    if (chosenPokemon.has(e.currentTarget.id)) {
+      if (chosenPokemon.size > highScore) {
+        setHighScore(chosenPokemon.size);
+      }
+      setChosenPokemon(new Set().add(e.currentTarget.id));
+    }
+    else {
+      setChosenPokemon(new Set(chosenPokemon).add(e.currentTarget.id));
+    }
+  }
 
   return (
     <div>
-      <Header />
+      <Header currentScore={chosenPokemon.size} highScore={highScore}/>
       <Instructions />
-      <Cards />
+      <Cards chosenPokemon={chosenPokemon} handleCardChoice={handleCardChoice} />
     </div>
   )
 }
+
+
 
 export default MemoryCardGame;

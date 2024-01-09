@@ -21,6 +21,10 @@
   filter: drop-shadow(0 0 8px #00509baa);
 }
 
+.card:active {
+  background-color: rgb(200, 240, 255);
+}
+
 img {
   width: 150px;
 }
