@@ -12,17 +12,17 @@
   align-items: center;
   padding: 15px;
   border: 2px solid rgb(141, 152, 160);
-  background-color: rgb(237, 245, 248);
+  background-color: whitesmoke;
   border-radius: 16px;
   box-sizing: border-box;
 }
 
 .card:hover {
-  filter: drop-shadow(0 0 8px #00509baa);
+  filter: drop-shadow(0 0 8px darkblue);
 }
 
 .card:active {
-  background-color: rgb(200, 240, 255);
+  background-color: whitesmoke;
 }
 
 img {
