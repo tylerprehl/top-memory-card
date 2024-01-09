@@ -8,7 +8,7 @@
 @media (prefers-color-scheme: dark) {
   :card {
     --card-background-color: lightgray;
-    --card-hover-color: darkgray;
+    --card-hover-background-color: darkgray;
     --card-text-color: black;
   }
 }
@@ -31,11 +31,11 @@
 }
 
 .card:hover {
-  filter: drop-shadow(0 0 8px darkblue);
+  filter: drop-shadow(0 0 8px lightblue);
 }
 
 .card:active {
-  background-color: var(--card-hover-color);
+  background-color: var(--card-hover-background-color);
 }
 
 img {
