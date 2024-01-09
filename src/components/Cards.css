@@ -5,14 +5,27 @@
   justify-content: space-evenly;
 }
 
+@media (prefers-color-scheme: dark) {
+  :card {
+    --card-background-color: lightgray;
+    --card-hover-color: darkgray;
+    --card-text-color: black;
+  }
+}
+
 .card {
+  --card-background-color: whitesmoke;
+  --card-hover-color: lightgray;
+  --card-text-color: black;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 15px;
+  color: var(--card-text-color);
   border: 2px solid rgb(141, 152, 160);
-  background-color: whitesmoke;
+  background-color: var(--card-background-color);
   border-radius: 16px;
   box-sizing: border-box;
 }
@@ -22,7 +35,7 @@
 }
 
 .card:active {
-  background-color: whitesmoke;
+  background-color: var(--card-hover-color);
 }
 
 img {
