@@ -7,7 +7,7 @@ This project's goal is to demonstrate and reinforce knowledge of React fundament
 - run ```npm init```
 - run ```npm run dev```
 <br>
-You can also view this project at [https://e82ec6a7.top-memory-card.pages.dev/]
+You can also view this project at https://e82ec6a7.top-memory-card.pages.dev/
 
 ### To Do: 
 - classic Pokemon font could be really cool
